@@ -1,0 +1,152 @@
+.news-list {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  ul {
+    max-height: 500px;
+    padding: 15px;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #aaafb6;
+      border-radius: 10px;
+    }
+
+    li:nth-child(1) {
+      background: #696969;
+    }
+    li {
+      cursor: pointer;
+      background: #fff;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      list-style-type: none;
+    }
+    .links {
+      text-decoration: none;
+      li {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          color: #696969;
+          padding: 0 45px;
+        }
+        span:nth-child(2) {
+          margin-right: 55px;
+        }
+      }
+    }
+    .links:hover {
+      transition: 0.5s all ease;
+      scale: 0.95;
+      span {
+        color: #dc143c;
+      }
+    }
+
+    .header-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      span {
+        margin: 0 30px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+}
+.news-detail {
+  padding: 50px;
+  max-width: 750px;
+  margin: 100px auto;
+  max-height: 500px;
+  padding: 15px;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #aaafb6;
+    border-radius: 10px;
+  }
+
+  p {
+    color: #36454f;
+  }
+  button {
+    height: 35px;
+    background: none;
+    color: #36454f;
+    border: 2px solid #36454f;
+    font-weight: 600;
+    border-radius: 5px;
+
+    a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #36454f;
+      padding: 5px 10px;
+    }
+  }
+  button:hover {
+    background: #36454f;
+    transition: 0.5s all ease;
+    a {
+      color: #fff;
+      transition: 0.5s all ease;
+    }
+  }
+
+  h1 {
+    color: #dc143c;
+    margin: 200px auto;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .description {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .dates {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.loading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 100px;
+}
