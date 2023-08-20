@@ -37,13 +37,18 @@ const NewsDetail = () => {
               <p className="description">{data?.attributes?.description}</p>
               <p className="dates">
                 <span>
-                  Data de Publicação: {data?.attributes?.schedule?.publication}
+                  Data de Publicação:{" "}
+                  <span className="date">
+                    {data?.attributes?.schedule?.publication}
+                  </span>
                 </span>
                 <span>
                   {data.attributes?.schedule?.deadline ? (
                     <>
                       Prazo para envio de propostas:{" "}
-                      {data.attributes?.schedule?.deadline}
+                      <span className="date">
+                        {data.attributes?.schedule?.deadline}
+                      </span>
                     </>
                   ) : (
                     <></>

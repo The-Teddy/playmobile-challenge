@@ -74,10 +74,10 @@
 }
 .news-detail {
   padding: 50px;
-  max-width: 750px;
+  max-width: 850px;
   margin: 100px auto;
   max-height: 500px;
-  padding: 15px;
+  padding: 15px 30px;
   overflow-y: auto;
   ::-webkit-scrollbar {
     width: 8px;
@@ -142,6 +142,11 @@
     margin-top: 50px;
     span {
       font-weight: 600;
+    }
+    .date {
+      color: #dc143c;
+      font-weight: 500;
+      font-size: 0.9rem;
     }
   }
 }
